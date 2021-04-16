@@ -49,20 +49,97 @@ nav li {
 /*----------------------------------------------------Hero Image Home page---------------*/
 
 #hero-image-home {
-    background-image: url="https://github.com/annemarie293/sarahs-bakery/blob/1f63f04e668dfe13d8cd5b874a6639b9f09ceaae/assets/images/hero-image-home.jpg"alt="image of home baked cake";
+    background-image: url("../images/hero-image-home.jpg");
     /*photo credit: https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels*/
     background-size: cover;
-    height: 1vh;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 
 }
+
+#hero-image-text {
+    color: #f5f7e1;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 60%;
+    padding: 0 17px;
+    font-size: 75px;
+    border-radius: 20px;
+    position: absolute;
+    left: 22%;
+    right: 22%;
+    top: 35%;
+}
+
+
+/*----------------------------------------------------About Us---------------*/
+
+#about-us {
+    background-color: #e7b734;
+    padding-bottom: 15px;
+}
+
+#about-us-heading {
+    margin: 0 150px;
+    text-align: center;
+    color: #f5f7e1;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+#about-us-heading h1 {
+    font-size: 70px;
+}
+
+@media screen and (max-width: 635px) {
+
+    #about-us-heading {
+        margin: 0 30px;
+        text-align: center;
+        color: #f5f7e1;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    #about-us-heading h1 {
+        font-size: 30px;
+    }
+}
+
+
+.about-us-text {
+    background-color: #f5f7e1;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.about-us-pic img {
+    border-radius: 5px;
+}
+
+.about-us-col {
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+
+
 
 /*----------------------------------------------------Footer---------------*/
 
 footer {
     background-color: #889b58;
-
+    padding-top: 10px;
     bottom: 0;
 }
 
@@ -75,8 +152,6 @@ footer h4 {
     color: #f5f7e1;
 }
 
-
-
 .social-links li a i {
     color: #f5f7e1;
     height: 35px;
@@ -84,7 +159,6 @@ footer h4 {
     text-align: center;
     font-size: 25px;
 }
-
 
 .social-links li a i:hover {
     color: #e7b734
