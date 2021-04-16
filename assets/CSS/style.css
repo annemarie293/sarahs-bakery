@@ -46,6 +46,18 @@ nav li {
     }
 }
 
+/*----------------------------------------------------Hero Image Home page---------------*/
+
+#hero-image-home {
+    background-image: url="https://github.com/annemarie293/sarahs-bakery/blob/1f63f04e668dfe13d8cd5b874a6639b9f09ceaae/assets/images/hero-image-home.jpg"alt="image of home baked cake";
+    /*photo credit: https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels*/
+    background-size: cover;
+    height: 1vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 /*----------------------------------------------------Footer---------------*/
 
 footer {
