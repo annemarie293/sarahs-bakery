@@ -73,6 +73,52 @@ nav li {
     top: 35%;
 }
 
+/*----------------------------------------------------Section Headings---------------*/
+
+.section-heading {
+    margin: 0 150px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+}
+
+#about-us .section-heading h1 {
+    font-size: 70px;
+    color: #f5f7e1;
+}
+
+#cakes .section-heading h1 {
+    font-size: 70px;
+    color: #889b58;
+}
+
+@media screen and (max-width: 635px) {
+
+    .section-heading {
+        margin: 0 30px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    #about-us .section-heading h1 {
+        font-size: 40px;
+        color: #f5f7e1;
+    }
+
+    #cakes .section-heading h1 {
+        font-size: 40px;
+        color: #889b58;
+    }
+}
+
 
 /*----------------------------------------------------About Us---------------*/
 
@@ -81,48 +127,23 @@ nav li {
     padding-bottom: 15px;
 }
 
-#about-us-heading {
-    margin: 0 150px;
-    text-align: center;
-    color: #f5f7e1;
-    text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: 900;
-    letter-spacing: 3px;
-}
-
-#about-us-heading h1 {
-    font-size: 70px;
-}
-
-@media screen and (max-width: 635px) {
-
-    #about-us-heading {
-        margin: 0 30px;
-        text-align: center;
-        color: #f5f7e1;
-        text-transform: uppercase;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-weight: 900;
-        letter-spacing: 2px;
-    }
-
-    #about-us-heading h1 {
-        font-size: 30px;
-    }
-}
 
 
 .about-us-text {
     background-color: #f5f7e1;
     padding: 15px;
     border-radius: 2px;
+    margin: 30px;
+    margin-bottom: 8px;
 }
 
 .about-us-pic img {
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 .about-us-col {
@@ -132,7 +153,20 @@ nav li {
 
 }
 
+/*----------------------------------------------------Cakes---------------*/
 
+#cakes-menu .card-deck .card {
+    background-color: #889b58;
+    border: 1px solid #889b58;
+    color: #f5f7e1;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#cakes-menu .card-deck .card .img {
+    margin-top: 5px;
+}
 
 
 /*----------------------------------------------------Footer---------------*/
