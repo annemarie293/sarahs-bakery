@@ -81,19 +81,25 @@ nav li {
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 3px;
+}
 
+.section-heading h1 {
+    font-weight: 700;
+    font-size: 70px;
 }
 
 #about-us .section-heading h1 {
-    font-size: 70px;
     color: #f5f7e1;
 }
 
 #cakes .section-heading h1 {
-    font-size: 70px;
     color: #889b58;
+}
+
+#order .section-heading h1 {
+    color: #e7b734;
 }
 
 @media screen and (max-width: 635px) {
@@ -104,7 +110,7 @@ nav li {
         text-transform: uppercase;
         padding-top: 15px;
         padding-bottom: 5px;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: 2px;
     }
 
@@ -117,6 +123,11 @@ nav li {
         font-size: 40px;
         color: #889b58;
     }
+
+    #order .section-heading h1 {
+        font-size: 40px;
+        color: #e7b734;
+    }
 }
 
 
@@ -124,10 +135,8 @@ nav li {
 
 #about-us {
     background-color: #e7b734;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
 }
-
-
 
 .about-us-text {
     background-color: #f5f7e1;
@@ -155,21 +164,39 @@ nav li {
 
 /*----------------------------------------------------Cakes---------------*/
 
+
+.card-deck {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #cakes-menu .card-deck .card {
     background-color: #889b58;
     border: 1px solid #889b58;
     color: #f5f7e1;
     font-size: large;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-#cakes-menu .card-deck .card .img {
-    margin-top: 5px;
+.cakes-menu-img {
+    height: 350px;
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
+@media screen and (max-width: 770px) {
+    .cakes-menu-img {
+        height: 200px;
+        width: 275px;
+    }
+}
 
-/*----------------------------------------------------Footer---------------*/
+/*--------------------------------------------------------Order---------------*/
+
+
+/*--------------------------------------------------------Footer---------------*/
 
 footer {
     background-color: #889b58;
