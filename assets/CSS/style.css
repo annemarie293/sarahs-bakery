@@ -156,10 +156,8 @@ nav li {
 }
 
 .about-us-col {
-
     padding-left: 2%;
     padding-right: 2%;
-
 }
 
 /*----------------------------------------------------Cakes---------------*/
@@ -191,6 +189,14 @@ nav li {
         height: 200px;
         width: 275px;
     }
+}
+
+.card-text {
+    text-align: center;
+}
+
+#cakes-menu .card-deck .card {
+    font-size: x-large;
 }
 
 /*--------------------------------------------------------Order---------------*/
@@ -225,8 +231,7 @@ footer h4 {
     color: #e7b734
 }
 
-@media (max-width: 700px) {
-
+@media screen and (max-width: 700px) {
     footer img {
         height: 25px;
         width: 25px;
