@@ -182,7 +182,76 @@
             <div class="section-heading">
                 <h1>Order</h1>
             </div>
+
+            <div id="order-form" class="container-fluid">
+                <form>
+                    <h1>Submit your order details here</h1>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Contact Details</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <input class="form-textbox" type="text" placeholder="First name">
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-textbox" type="text" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <input class="form-textbox" type="text" placeholder="Phone Number">
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-textbox" type="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Occasion</h5>
+                            <input id="birthday" type="radio" name="occasion" value="birthday">
+                            <label for="birthday">Birthday</label>
+                            <input id="baby" type="radio" name="occasion" value="baby">
+                            <label for="baby">Baby</label>
+                            <input id="wedding" type="radio" name="occasion" value="wedding">
+                            <label for="wedding">Wedding</label>
+                            <input id="other" type="radio" name="occasion" value="other">
+                            <label for="other">Other (add info below)</label>
+                        </div>
+                        <div class="col-12">
+                            <h5>Type of Cake</h5>
+                            <input id="sponge" type="radio" name="cake-type" value="sponge">
+                            <label for="sponge">Sponge Cake</label>
+                            <input id="cheesecake" type="radio" name="cake-type" value="cheesecake">
+                            <label for="cheesecake">Cheesecake</label>
+                            <input id="biscuit" type="radio" name="cake-type" value="biscuit">
+                            <label for="biscuit">Biscuit Cake</label>
+                            <input id="other" type="radio" name="cake-type" value="other">
+                            <label for="other">Other (add info below)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="required-date">Cake required for</label>
+                            <input type="date" id="required-date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="preferences">Preferences</label>
+                            <br>
+                            <textarea id="preferences" name="preferences" rows="5" cols="30"
+                                placeholder="Please provide a description of your preferences regarding style, size, flavours etc, and any other features you would like."></textarea>
+                            <br>
+                        </div>
+                    </div>
+                    <button> Submit </button>
+                </form>
+
+            </div>
         </section>
+
 
 
         <footer>
