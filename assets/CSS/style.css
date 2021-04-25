@@ -218,6 +218,11 @@ nav li {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width:425px) {
+    textarea {
+        width: 90%;
+    }
+}
 
 /*--------------------------------------------------------Footer---------------*/
 
