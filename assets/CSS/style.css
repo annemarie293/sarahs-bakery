@@ -143,19 +143,20 @@ nav li {
     padding-bottom: 35px;
 }
 
+/*--------Small screens--------*/
 .about-us-text {
     color: #f5f7e1;
-    padding: 15px;
+    padding: 5px;
     border-radius: 2px;
-    margin: 30px;
-    margin-bottom: 8px;
+    margin: 15px;
+    margin-bottom: 5px;
     font-size: 25px;
 }
 
 .about-us-pic img {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     display: block;
     margin: auto;
     text-align: center;
@@ -165,6 +166,39 @@ nav li {
     padding-left: 2%;
     padding-right: 2%;
 }
+
+/*--------Tablets--------*/
+@media screen and (min-width:450px) {
+
+    .about-us-text {
+        padding: 15px;
+        margin: 10px 20px;
+        font-size: 30px;
+    }
+
+    .about-us-pic img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/*-------Large Screens--------*/
+@media screen and (min-width:770px) {
+
+    .about-us-text {
+        padding: 15px;
+        margin: 30px;
+        margin-bottom: 8px;
+    }
+
+    .about-us-pic img {
+        width: 350px;
+        height: 350px;
+        vertical-align: middle;
+    }
+
+}
+
 
 /*----------------------------------------------------Cakes---------------*/
 
@@ -179,33 +213,45 @@ nav li {
 
 #cakes-menu .card-deck .card {
     background-color: #889b58;
-    border: 1px solid #889b58;
     color: #f5f7e1;
-    font-size: large;
+    font-size: x-large;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+#cakes-menu .card-deck .card-body {
+    padding: 10px 15px;
+    line-height: 1.25;
 }
 
 .cakes-menu-img {
-    height: 350px;
-    width: 375px;
+    height: 200px;
+    width: 275px;
     margin: 0 auto;
     margin-top: 10px;
-}
-
-@media screen and (max-width: 770px) {
-    .cakes-menu-img {
-        height: 200px;
-        width: 275px;
-    }
 }
 
 .card-text {
     text-align: center;
 }
 
-#cakes-menu .card-deck .card {
-    font-size: x-large;
+@media screen and (min-width:450px) {
+    #cakes-menu .card-deck .card-body {
+        padding: 10px 8px;
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .cakes-menu-img {
+        height: 350px;
+        width: 375px;
+    }
+
+    #cakes-menu .card-deck .card-body {
+        line-height: 1.5;
+    }
 }
 
 /*--------------------------------------------------------Order---------------*/
@@ -225,7 +271,6 @@ nav li {
     border-radius: 5px;
     display: block;
     margin: auto;
-    vertical-align: middle;
     margin-left: 35px;
 }
 
