@@ -84,18 +84,18 @@ nav li {
 /*----------------------------------------------------Section Headings---------------*/
 
 .section-heading {
-    margin: 0 150px;
+    margin: 0 30px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .section-heading h1 {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 #about-us .section-heading h1 {
@@ -110,33 +110,35 @@ nav li {
     color: #e7b734;
 }
 
-@media screen and (max-width: 635px) {
+#markets .section-heading h1 {
+    color: #889b58;
+}
 
-    .section-heading {
-        margin: 0 30px;
-        text-align: center;
-        text-transform: uppercase;
-        padding-top: 15px;
-        padding-bottom: 5px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-
-    #about-us .section-heading h1 {
-        font-size: 40px;
-    }
-
-    #cakes .section-heading h1 {
-        font-size: 40px;
-    }
-
-    #order .section-heading h1 {
-        font-size: 40px;
+/*-----------------Tablets----------------*/
+@media screen and (min-width: 450px) {
+    .section-heading h1 {
+        font-size: 50px;
     }
 }
 
+/*-------------Large Screens--------------*/
+@media screen and (min-width: 770px) {
 
-/*----------------------------------------------------About Us---------------*/
+    .section-heading {
+        margin: 0 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    .section-heading h1 {
+        font-size: 70px;
+    }
+
+}
+
+
+/*-----------------------------------------------------------------------About Us---------------*/
 
 #about-us {
     background-color: #e7b734;
@@ -200,8 +202,9 @@ nav li {
 }
 
 
-/*----------------------------------------------------Cakes---------------*/
+/*---------------------------------------------------------------------Cakes---------------*/
 
+/*-------Small Screens--------*/
 #cakes {
     background-color: #f5f7e1;
 }
@@ -236,6 +239,7 @@ nav li {
     text-align: center;
 }
 
+/*-----------Tablets-------*/
 @media screen and (min-width:450px) {
     #cakes-menu .card-deck .card-body {
         padding: 10px 8px;
@@ -243,6 +247,7 @@ nav li {
     }
 }
 
+/*-------Large Screens--------*/
 @media screen and (min-width: 770px) {
     .cakes-menu-img {
         height: 350px;
@@ -254,7 +259,7 @@ nav li {
     }
 }
 
-/*--------------------------------------------------------Order---------------*/
+/*---------------------------------------------------------------------------Order---------------*/
 
 #order {
     background-color: #f5f7e1;
@@ -313,7 +318,94 @@ nav li {
     }
 }
 
-/*--------------------------------------------------------Footer---------------*/
+/*-------------------------------------------------------------------Markets --------------*/
+
+#markets {
+    background-color: #e7b734;
+}
+
+.market-col {
+    padding: 0;
+}
+
+#markets .card {
+    background-color: #f5f7e1;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+}
+
+#markets .card-body h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#markets .card-body p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#markets .card-body {
+    color: #889b58;
+    font-size: x-large;
+    line-height: 1;
+}
+
+#markets .card-text {
+    padding: 10px;
+}
+
+#markets a {
+    color: #889b58;
+    text-decoration: none;
+}
+
+#markets a:hover {
+    color: #e7b734;
+
+}
+
+/*--------Tablets--------*/
+
+@media screen and (min-width:450px) {
+    #markets {
+        padding-bottom: 10px;
+    }
+
+    .market-col {
+        margin-bottom: 15px;
+    }
+
+}
+
+/*--------large Screens--------*/
+
+@media screen and (min-width:770px) {
+
+
+
+    #markets .card-body p {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width:1160px) {
+
+    #markets .card-body h2 {
+        font-size: 40px;
+    }
+
+    #markets .card-body p {
+        font-size: 35px;
+    }
+
+}
+
+
+
+/*--------------------------------------------------------------------Footer---------------*/
 
 footer {
     background-color: #889b58;
