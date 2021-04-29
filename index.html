@@ -83,7 +83,7 @@
             </div>
             <div id="cakes-menu">
                 <div class="row card-deck">
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/cheesecake.jpg"
                             alt="image of cheesecake">
                         <div class="card-body">
@@ -91,17 +91,16 @@
                             <p class="card-text">Homemade baked vanilla cheescake topped with fresh berry compote</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/choc-cake.jpg"
                             alt="image of chocolate cake">
                         <div class="card-body">
                             <h2 class="card-text">Chocolate Cake</h2>
-                            <p class="card-text">Homemade triple chocolate cake, filled with chocolate buttercream icing
-                                and
-                                dark chocloate ganache</p>
+                            <p class="card-text">Homemade chocolate cake, filled with chocolate buttercream and dark
+                                chocloate ganache</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/brownies.jpg"
                             alt="image of chocolate brownies">
                         <div class="card-body">
@@ -111,7 +110,7 @@
                     </div>
                 </div>
                 <div class="row card-deck">
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card  shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/fruit-cake.jpg"
                             alt="image of sponge cake with fresh fruit">
                         <div class="card-body">
@@ -120,7 +119,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/lemon-tart.jpg"
                             alt="image of lemon tart with fruit">
                         <div class="card-body">
@@ -128,7 +127,7 @@
                             <p class="card-text">A buttery shortbread pastry tart filled with homemade lemon custard</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/lemon-cake.jpg"
                             alt="image of lemon loaf cake">
                         <div class="card-body">
@@ -138,7 +137,7 @@
                     </div>
                 </div>
                 <div class="row card-deck">
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/carrot-cake.jpg"
                             alt="image of carrot cake with slice">
                         <div class="card-body">
@@ -147,7 +146,7 @@
                                 cheese icing</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/cupcakes.jpg"
                             alt="image of cupcakes">
                         <div class="card-body">
@@ -156,7 +155,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 card">
+                    <div class="col-md-6 col-lg-4 card shadow">
                         <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/donuts.jfif"
                             alt="image of donuts">
                         <div class="card-body">
@@ -197,69 +196,77 @@
                 <div class="row">
                     <div class="offset-lg-4">
                         <form>
-                            <h1>Submit your order details here</h1>
+                            <h2>Submit your order details here:</h2>
                             <div class="row">
                                 <div class="col">
                                     <h5>Contact Details</h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
-                                    <input class="form-textbox" type="text" placeholder="First name">
+                                <div class="col-md-4">
+                                    <input class="form-textbox" type="text" placeholder="First name" required>
                                 </div>
-                                <div class="col-md-3">
-                                    <input class="form-textbox" type="text" placeholder="Last name">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <input class="form-textbox" type="text" placeholder="Phone Number">
-                                </div>
-                                <div class="col-md-3">
-                                    <input class="form-textbox" type="email" placeholder="Email Address">
+                                <div class="col-md-4">
+                                    <input class="form-textbox" type="text" placeholder="Last name" required>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-md-4">
+                                    <input class="form-textbox" type="text" placeholder="Phone Number" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input class="form-textbox" type="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 radio-form">
                                     <h5>Occasion</h5>
-                                    <input id="birthday" type="radio" name="occasion" value="birthday">
-                                    <label for="birthday">Birthday</label>
-                                    <input id="baby" type="radio" name="occasion" value="baby">
-                                    <label for="baby">Baby</label>
-                                    <input id="wedding" type="radio" name="occasion" value="wedding">
-                                    <label for="wedding">Wedding</label>
-                                    <input id="other" type="radio" name="occasion" value="other">
-                                    <label for="other">Other (add info below)</label>
+                                    <label for="birthday" class="radio-label"><input id="birthday" type="radio"
+                                            name="occasion" value="birthday" required> Birthday</label>
+                                    <label for="baby" class="radio-label"><input id="baby" type="radio" name="occasion"
+                                            value="baby"> Baby</label>
+                                    <label for="wedding" class="radio-label"><input id="wedding" type="radio"
+                                            name="occasion" value="wedding"> Wedding</label>
+                                    <label for="other" class="radio-label"><input id="other" type="radio"
+                                            name="occasion" value="other"> Other (add info below)</label>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 radio-form">
                                     <h5>Type of Cake</h5>
-                                    <input id="sponge" type="radio" name="cake-type" value="sponge">
-                                    <label for="sponge">Sponge Cake</label>
-                                    <input id="cheesecake" type="radio" name="cake-type" value="cheesecake">
-                                    <label for="cheesecake">Cheesecake</label>
-                                    <input id="biscuit" type="radio" name="cake-type" value="biscuit">
-                                    <label for="biscuit">Biscuit Cake</label>
-                                    <input id="other" type="radio" name="cake-type" value="other">
-                                    <label for="other">Other (add info below)</label>
+                                    <label for="sponge" class="radio-label"><input id="sponge" type="radio"
+                                            name="cake-type" value="sponge" required> Sponge Cake</label>
+                                    <label for="cheesecake" class="radio-label"> <input id="cheesecake" type="radio"
+                                            name="cake-type" value="cheesecake"> Cheesecake</label>
+                                    <label for="biscuit" class="radio-label"><input id="biscuit" type="radio"
+                                            name="cake-type" value="biscuit"> Biscuit Cake</label>
+                                    <label for="other" class="radio-label"><input id="other" type="radio"
+                                            name="cake-type" value="other"> Other (add info below)</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <label for="required-date">Cake required for</label>
-                                    <input type="date" id="required-date">
+                                <div class="col order-date">
+                                    <label for="required-date">
+                                        <h5>Cake required for: </h5>
+                                    </label>
+                                    <input type="date" id="required-date" class="form-textbox" required>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <label for="preferences">Preferences</label>
+                                <div class="col preferences">
+                                    <label for="preferences">
+                                        <h5>Preferences</h5>
+                                    </label>
                                     <br>
-                                    <textarea id="preferences" name="preferences" rows="5" cols="50"
-                                        style="max-width:100%"
-                                        placeholder="Please provide a description of your preferences regarding style, size, flavours etc, and any other features you would like."></textarea>
+                                    <textarea id="preferences" class="form-textbox" name="preferences" rows="5"
+                                        cols="50" style="max-width:100%"
+                                        placeholder="Please provide any additonal information, and a description of your preferences regarding style, size, flavours etc, or any other features you would like."></textarea>
                                     <br>
                                 </div>
                             </div>
-                            <button> Submit </button>
+                            <div class="row">
+                                <div class="col button-col">
+                                    <button class="order-submit"> Submit </button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -275,7 +282,7 @@
             <div class="row card-deck">
                 <div class="col-md-6 col-lg-3 market-col">
                     <div class="card">
-                        <div class="card-body card-text">
+                        <div class="card-body shadow card-text">
                             <h2>Thursday</h2>
                             <a href="https://g.page/MespilRoadLunchtimeMarket?share" target="_blank">
                                 <P>Grand Canal Market</P>
@@ -286,7 +293,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 market-col">
                     <div class="card">
-                        <div class="card-body card-text">
+                        <div class="card-body shadow card-text">
                             <h2>Friday</h2>
                             <a href="https://goo.gl/maps/j2zFNiUFQ1Uenmmk9" target="_blank">
                                 <P>Temple Bar Market</P>
@@ -297,7 +304,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 market-col">
                     <div class="card">
-                        <div class="card-body card-text">
+                        <div class="card-body shadow card-text">
                             <h2>Saturday</h2>
                             <a href="https://goo.gl/maps/aTE7eiwWC1P3x5Wu8" target="_blank">
                                 <P>Fumbally Market</P>
@@ -308,7 +315,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 market-col">
                     <div class="card">
-                        <div class="card-body card-text">
+                        <div class="card-body shadow card-text">
                             <h2>Sunday</h2>
                             <a href="https://goo.gl/maps/96TCWXEs5bEwpmB49" target="_blank">
                                 <p>Herbert Park Market</p>
