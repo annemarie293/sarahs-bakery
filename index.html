@@ -219,27 +219,29 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 radio-form">
-                                    <h5>Occasion</h5>
-                                    <label for="birthday" class="radio-label"><input id="birthday" type="radio"
-                                            name="occasion" value="birthday" required> Birthday</label>
-                                    <label for="baby" class="radio-label"><input id="baby" type="radio" name="occasion"
-                                            value="baby"> Baby</label>
-                                    <label for="wedding" class="radio-label"><input id="wedding" type="radio"
-                                            name="occasion" value="wedding"> Wedding</label>
-                                    <label for="other" class="radio-label"><input id="other" type="radio"
-                                            name="occasion" value="other"> Other (add info below)</label>
+                                <div class="col-12 dropdown-form">
+                                    <label for="occasion">
+                                        <h5>Occasion:</h5>
+                                    </label>
+                                    <select name="occasion" id="occasion" class="form-textbox" required>
+                                        <option value="birthday">Birthday</option>
+                                        <option value="Baby">New Baby</option>
+                                        <option value="communion">Communion</option>
+                                        <option value="confirmation">Confirmation</option>
+                                        <option value="other">Other (add info below)</option>
+                                    </select>
                                 </div>
-                                <div class="col-12 radio-form">
-                                    <h5>Type of Cake</h5>
-                                    <label for="sponge" class="radio-label"><input id="sponge" type="radio"
-                                            name="cake-type" value="sponge" required> Sponge Cake</label>
-                                    <label for="cheesecake" class="radio-label"> <input id="cheesecake" type="radio"
-                                            name="cake-type" value="cheesecake"> Cheesecake</label>
-                                    <label for="biscuit" class="radio-label"><input id="biscuit" type="radio"
-                                            name="cake-type" value="biscuit"> Biscuit Cake</label>
-                                    <label for="other" class="radio-label"><input id="other" type="radio"
-                                            name="cake-type" value="other"> Other (add info below)</label>
+                                <div class="col-12 dropdown-form">
+                                    <label for="cake-type">
+                                        <h5>Type of Cake:</h5>
+                                    </label>
+                                    <select name="cake-type" id="cake-type" class="form-textbox" required>
+                                        <option value="vanilla">Vanilla Sponge Cake</option>
+                                        <option value="chocolate">Chocolate Cake</option>
+                                        <option value="cheesecake">Cheesecake</option>
+                                        <option value="biscuit">Biscuite Cake</option>
+                                        <option value="other">Other (add info below)</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row">

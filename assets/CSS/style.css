@@ -343,21 +343,19 @@ nav li {
     margin-bottom: 10px;
 }
 
-.radio-form {
+.dropdown-form {
     text-align: center;
+    margin: 0 auto;
 }
 
-.radio-label {
-    color: #889b58;
-    font-size: 20px;
-    margin-right: 10px;
-}
 
 .order-date {
     text-align: center;
 }
 
-#required-date {
+#required-date,
+#cake-type,
+#occasion {
     margin-left: 4px;
 }
 
