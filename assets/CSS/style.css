@@ -95,31 +95,31 @@ nav li {
     letter-spacing: 2px;
 }
 
-.section-heading h1 {
+.section-heading h2 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 35px;
 }
 
-#about-us .section-heading h1 {
+#about-us .section-heading h2 {
     color: #f5f7e1;
 }
 
-#cakes .section-heading h1 {
+#cakes .section-heading h2 {
     color: #889b58;
 }
 
-#order .section-heading h1 {
+#order .section-heading h2 {
     color: #e7b734;
 }
 
-#markets .section-heading h1 {
+#markets .section-heading h2 {
     color: #889b58;
 }
 
 /*-----------------Tablets----------------*/
 @media screen and (min-width: 450px) {
-    .section-heading h1 {
-        font-size: 50px;
+    .section-heading h2 {
+        font-size: 35px;
     }
 }
 
@@ -133,12 +133,10 @@ nav li {
         letter-spacing: 3px;
     }
 
-    .section-heading h1 {
-        font-size: 80px;
+    .section-heading h2 {
+        font-size: 50px;
     }
-
 }
-
 
 /*-----------------------------------------------------------------------About Us---------------*/
 
@@ -163,7 +161,6 @@ nav li {
     height: 300px;
     display: block;
     margin: auto;
-    text-align: center;
 }
 
 .about-us-col {
@@ -180,6 +177,10 @@ nav li {
         font-size: 25px;
     }
 
+    .about-us-text p {
+        margin-top: 15px;
+    }
+
     .about-us-pic img {
         width: 350px;
         height: 350px;
@@ -189,9 +190,18 @@ nav li {
 /*-------Large Screens--------*/
 @media screen and (min-width:770px) {
 
+    .about-us-col {
+        padding-left: 2%;
+        padding-right: 0;
+    }
+
     .about-us-text {
         margin: 30px;
         margin-bottom: 8px;
+    }
+
+    .about-us-pic {
+        padding-right: 25px;
     }
 
     .about-us-pic img {
@@ -210,12 +220,7 @@ nav li {
     background-color: #f5f7e1;
 }
 
-.card-deck {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#cakes-menu .card-deck .card {
+#cakes-menu .card {
     background-color: #889b58;
     color: #f5f7e1;
     font-size: x-large;
@@ -232,14 +237,12 @@ nav li {
 
 .cakes-menu-img {
     height: 200px;
-    width: 275px;
+    width: 200px;
     margin: 0 auto;
     margin-top: 10px;
+    border-radius: 50%;
 }
 
-.card-text {
-    text-align: center;
-}
 
 /*-----------Tablets-------*/
 @media screen and (min-width:450px) {
@@ -257,8 +260,8 @@ nav li {
 /*-------Large Screens--------*/
 @media screen and (min-width: 770px) {
     .cakes-menu-img {
-        height: 350px;
-        width: 375px;
+        height: 325px;
+        width: 325px;
     }
 
     #cakes-menu .card-deck .card-body {
@@ -348,7 +351,6 @@ nav li {
     margin: 0 auto;
 }
 
-
 .order-date {
     text-align: center;
 }
@@ -359,7 +361,7 @@ nav li {
     margin-left: 4px;
 }
 
-.preferences {
+.details {
     text-align: center;
 }
 
@@ -392,6 +394,10 @@ nav li {
     .order-text p {
         padding: 2px 20px;
     }
+
+    .left-textbox {
+        margin-left: 170px
+    }
 }
 
 /*--------------large screens --------------*/
@@ -400,6 +406,11 @@ nav li {
     .order-pic img {
         height: 350px;
     }
+
+    .left-textbox {
+        margin-left: 250px
+    }
+}
 }
 
 @media screen and (min-width:1025px) {
@@ -414,99 +425,14 @@ nav li {
     .order-text {
         margin: 60px 25px 0px 0px;
     }
-
-
 }
 
-@media screen and (max-width:425px) {
+/*@media screen and (max-width:425px) {
     textarea {
         width: 90%;
     }
-}
+}*/
 
-/*-------------------------------------------------------------------Markets --------------*/
-
-#markets {
-    background-color: #e7b734;
-}
-
-.market-col {
-    padding: 0;
-}
-
-#markets .card {
-    background-color: #f5f7e1;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 0;
-    border-radius: 10px;
-}
-
-#markets .card-body h2 {
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-#markets .card-body p {
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-#markets .card-body {
-    color: #889b58;
-    font-size: x-large;
-    line-height: 1;
-}
-
-#markets .card-text {
-    padding: 10px;
-}
-
-#markets a {
-    color: #889b58;
-    text-decoration: none;
-}
-
-#markets a:hover {
-    color: #e7b734;
-
-}
-
-/*--------Tablets--------*/
-
-@media screen and (min-width:450px) {
-    #markets {
-        padding-bottom: 10px;
-    }
-
-    .market-col {
-        margin-bottom: 15px;
-    }
-
-}
-
-/*--------large Screens--------*/
-
-@media screen and (min-width:770px) {
-    #markets .card-body p {
-        font-size: 22px;
-    }
-
-    #markets {
-        padding-bottom: 20px;
-    }
-}
-
-@media screen and (min-width:1160px) {
-    #markets .card-body h2 {
-        font-size: 40px;
-    }
-
-    #markets .card-body p {
-        font-size: 35px;
-    }
-}
 
 /*--------------------------------------------------------------------Footer---------------*/
 
