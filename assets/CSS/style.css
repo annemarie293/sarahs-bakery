@@ -2,9 +2,12 @@
 
 body {
     font-family: 'Cormorant Garamond', serif;
+    padding-top: 60px;
 }
 
 /*----------------------------------------------------------------NavBar--------------------*/
+
+/*-------small screens- mobile first---------*/
 nav {
     background-color: #889b58;
 }
@@ -18,7 +21,6 @@ nav h1 {
     color: #f5f7e1;
     font-weight: 400;
     font-size: 25px;
-    /*----Only for < 700 px screens, see media query below*/
     text-transform: uppercase;
     vertical-align: middle;
 }
@@ -29,6 +31,15 @@ nav li {
     color: #f5f7e1;
 }
 
+/*-------very small screens-----------*/
+
+@media (max-width: 340px) {
+    nav h1 {
+        font-size: 20px;
+    }
+}
+
+/*-------tablets + large screens---------*/
 
 @media (min-width: 700px) {
     nav img {
@@ -47,16 +58,10 @@ nav li {
     }
 }
 
-@media (max-width: 340px) {
-    nav h1 {
-        font-size: 20px;
-    }
-}
 
+/*----------------------------------------------------------Hero Image---------------*/
 
-/*----------------------------------------------------Hero Image Home page---------------*/
-
-#hero-image-home {
+#hero-image {
     background-image: url("../images/hero-image-home.jpg");
     /*photo credit: https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels*/
     background-size: cover;
@@ -64,21 +69,63 @@ nav li {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-
 }
 
-#hero-image-text {
-    color: #f5f7e1;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    max-width: 60%;
-    padding: 0 17px;
-    font-size: 75px;
-    border-radius: 20px;
+.hero-image-text {
+    color: white;
     position: absolute;
-    left: 22%;
-    right: 22%;
-    top: 35%;
+    top: 10%;
+    left: 8%;
+    width: 225px;
+    height: 136px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+}
+
+.hero-image-text h2 {
+    font-size: 38px;
+    padding-left: 8px;
+    font-weight: bolder;
+}
+
+/*----------Tablets------------*/
+
+@media screen and (min-width: 450px) {
+    .hero-image-text {
+        top: 10%;
+        left: 8%;
+        width: 260px;
+        height: 170px;
+    }
+
+    .hero-image-text h2 {
+        font-size: 45px;
+        padding-left: 12px;
+        font-weight: bolder;
+    }
+}
+
+/*----------large screens------------*/
+
+@media screen and (min-width: 770px) {
+    .hero-image-text {
+        top: 12%;
+        left: 15%;
+        width: 285px;
+        height: 200px;
+    }
+
+    .hero-image-text h2 {
+        font-size: 50px;
+        padding-left: 15px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .hero-image-text {
+        left: 20%;
+    }
 }
 
 /*------------------------------------------------------------Section Headings---------------*/
@@ -86,10 +133,10 @@ nav li {
 /*------------mobile-first------------*/
 
 .section-heading {
-    margin: 0 10px;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 5px;
     letter-spacing: 2px;
 }
@@ -111,7 +158,6 @@ nav li {
     color: #e7b734;
 }
 
-
 /*-----------------Tablets----------------*/
 @media screen and (min-width: 450px) {
     .section-heading h2 {
@@ -123,7 +169,7 @@ nav li {
 @media screen and (min-width: 770px) {
 
     .section-heading {
-        padding-top: 20px;
+        padding-top: 25px;
         padding-bottom: 20px;
         letter-spacing: 3px;
     }
@@ -163,7 +209,7 @@ nav li {
     padding-right: 2%;
 }
 
-/*--------Tablets--------*/
+/*----------Tablets--------*/
 @media screen and (min-width:450px) {
 
     .about-us-text {
@@ -182,7 +228,7 @@ nav li {
     }
 }
 
-/*-------Large Screens--------*/
+/*---------Large Screens--------*/
 @media screen and (min-width:770px) {
 
     .about-us-col {
@@ -215,13 +261,23 @@ nav li {
 }
 
 #cakes-menu .card {
-    background-color: #889b58;
-    color: #f5f7e1;
+    background-color: #f5f7e1;
+    color: #889b58;
     font-size: x-large;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px 15px;
     border-radius: 10px;
+    transition: 1s;
+}
+
+#cakes-menu .card:hover {
+    background-color: #889b58;
+    color: #f5f7e1;
+}
+
+.card-title {
+    font-weight: bold;
 }
 
 #cakes-menu .card-deck .card-body {
@@ -252,18 +308,15 @@ nav li {
 }
 
 /*-------Large Screens--------*/
-@media screen and (min-width: 770px) {
-    .cakes-menu-img {
-        height: 325px;
-        width: 325px;
-    }
+@media screen and (min-width: 990px) {
 
-    #cakes-menu .card-deck .card-body {
-        line-height: 1.5;
+    #cakes-menu .card {
+        line-height: 1.25;
+        padding: 5px;
     }
 }
 
-/*---------------------------------------------------------------------------Order---------------*/
+/*--------------------------------------------------------------------Orders--------------*/
 
 /*----------Mobile first----------*/
 #order {
@@ -333,21 +386,10 @@ nav li {
 .form-textbox {
     border: 1px #e7b734 solid;
     border-radius: 5px;
-    text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.dropdown-form {
-    text-align: center;
-    margin: 0 auto;
-}
-
-#required-date,
-#cake-type,
-#occasion {
-    margin-left: 5px;
-}
 
 .order-submit {
     margin: 0 auto;
@@ -406,15 +448,9 @@ nav li {
     }
 }
 
-/*@media screen and (max-width:425px) {
-    textarea {
-        width: 90%;
-    }
-}*/
+/*-------------------------------------------------------------Footer--------------------*/
 
-
-/*--------------------------------------------------------------------Footer---------------*/
-
+/*----------Mobile first----------*/
 footer {
     background-color: #889b58;
     padding-top: 10px;
