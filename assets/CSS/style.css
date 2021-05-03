@@ -86,18 +86,17 @@ nav li {
 /*------------mobile-first------------*/
 
 .section-heading {
-    margin: 0 30px;
+    margin: 0 10px;
     text-align: center;
     text-transform: uppercase;
     padding-top: 15px;
     padding-bottom: 5px;
-    font-weight: 700;
     letter-spacing: 2px;
 }
 
 .section-heading h2 {
-    font-weight: 700;
-    font-size: 35px;
+    font-weight: bold;
+    font-size: 32px;
 }
 
 #about-us .section-heading h2 {
@@ -112,9 +111,6 @@ nav li {
     color: #e7b734;
 }
 
-#markets .section-heading h2 {
-    color: #889b58;
-}
 
 /*-----------------Tablets----------------*/
 @media screen and (min-width: 450px) {
@@ -127,7 +123,6 @@ nav li {
 @media screen and (min-width: 770px) {
 
     .section-heading {
-        margin: 0 150px;
         padding-top: 20px;
         padding-bottom: 20px;
         letter-spacing: 3px;
@@ -208,10 +203,9 @@ nav li {
         width: 350px;
         height: 350px;
         vertical-align: middle;
+        margin-left: 5px;
     }
-
 }
-
 
 /*---------------------------------------------------------------------Cakes---------------*/
 
@@ -289,7 +283,7 @@ nav li {
 .order-pic img {
     width: 375px;
     height: 375px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: block;
     margin: auto;
     border: 3px #e7b734 solid;
@@ -323,19 +317,17 @@ nav li {
 }
 
 #order-form h2,
-#order-form h5 {
+#order-form p,
+#order-form label {
     color: #e7b734;
     text-align: center;
 }
 
-#order-form h5 {
+#order-form label,
+#order-form p {
     text-transform: capitalize;
     text-decoration: underline;
     font-size: 24px;
-}
-
-#order-form .col-md-4 {
-    text-align: center;
 }
 
 .form-textbox {
@@ -351,22 +343,10 @@ nav li {
     margin: 0 auto;
 }
 
-.order-date {
-    text-align: center;
-}
-
 #required-date,
 #cake-type,
 #occasion {
-    margin-left: 4px;
-}
-
-.details {
-    text-align: center;
-}
-
-.button-col {
-    text-align: center;
+    margin-left: 5px;
 }
 
 .order-submit {
@@ -407,10 +387,9 @@ nav li {
         height: 350px;
     }
 
-    .left-textbox {
-        margin-left: 250px
+    #order-form h2 {
+        font-size: 40px;
     }
-}
 }
 
 @media screen and (min-width:1025px) {
@@ -439,44 +418,104 @@ nav li {
 footer {
     background-color: #889b58;
     padding-top: 10px;
+    padding-bottom: 3px;
     bottom: 0;
 }
 
-footer img {
+#logo-footer img {
     display: inline;
+    height: 25px;
+    width: 25px;
 }
 
-footer h4 {
+#logo-footer h4 {
     display: inline;
     color: #f5f7e1;
+    font-size: 17px;
+}
+
+
+#logo-footer p {
+    color: #f5f7e1;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+
+#social-links-footer {
+    height: 25px;
 }
 
 .social-links li a i {
     color: #f5f7e1;
-    height: 35px;
-    width: 35px;
+    width: 28px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .social-links li a i:hover {
     color: #e7b734
 }
 
-@media screen and (max-width: 700px) {
-    footer img {
-        height: 25px;
-        width: 25px;
+.social-links {
+    margin-top: 25px;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #f5f7e1;
+    margin-bottom: 1px;
+}
+
+
+/*------------very small screens---------------*/
+@media screen and (max-width: 387px) {
+    .social-links li a i {
+        width: 24px;
+        text-align: center;
+        font-size: 15px;
     }
 
-    footer h4 {
-        font-size: 17px;
+    #social-links-footer {
+        padding-left: 0;
+    }
+
+    #logo-footer {
+        padding-right: 0;
+    }
+
+    #logo-footer h4 {
+        font-size: 14px;
+    }
+
+    #logo-footer p {
+        margin-left: 2px;
+    }
+}
+
+/*------------Tablets + large screens-----------*/
+@media screen and (min-width: 700px) {
+    footer img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #logo-footer h4 {
+        font-size: 24px;
+    }
+
+    #logo-footer p {
+        font-size: 15px;
+        margin-left: 38px;
     }
 
     .social-links li a i {
-        height: 28px;
-        width: 28px;
-        text-align: center;
-        font-size: 18px;
+        width: 40px;
+        font-size: 30px;
+    }
+
+    .social-links {
+        margin-top: 35px;
     }
 }

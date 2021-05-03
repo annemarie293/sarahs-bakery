@@ -14,7 +14,7 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/Cake Only transparent.png" width="40" height="35"
+                    <img src="assets/images/cake-only-transparent.png" width="40" height="35"
                         alt="icon of three tiered cake">
                     <h1>Sarah's Bakery</h1>
 
@@ -32,17 +32,20 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-us">About Us</a>
+                            <a class="nav-link" href="#about-us">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#cakes">Our Cakes</a>
+                            <a class="nav-link" href="#cakes">Cakes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#order">Orders</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#logo-footer">Contact</a>
+                        </li>
                     </ul>
-
                 </div>
+            </nav>
         </header>
 
         <section id="hero-image-home">
@@ -76,7 +79,7 @@
             </div>
         </section>
 
-        <section id="cakes" class="container-fluid">
+        <section id="cakes" class="container-fluid pb-2">
             <div class="section-heading">
                 <h2>Our Cakes</h2>
             </div>
@@ -173,17 +176,6 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="row card-deck">
-                    <div class="col-md-6 col-lg-3">
-                        <img class="card-img-top img-fluid cakes-menu-img" src="/assets/images/donuts.jfif"
-                            alt="image of donuts">
-                        <div class="card-body">
-                            <h2 class="card-text">Donuts</h2>
-                            <p class="card-text">Light and fluffy glazed donuts dipped in sugar and sprinkles</p>
-                        </div>
-                    </div>
-                </div>-->
-
             </div>
         </section>
 
@@ -218,7 +210,7 @@
                             <h2>Submit your order details here:</h2>
                             <div class="row">
                                 <div class="col">
-                                    <h5>Contact Details</h5>
+                                    <p>Contact Details</p>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -240,9 +232,10 @@
                             <div class="row">
                                 <div class="col-12 dropdown-form text-center">
                                     <label for="occasion">
-                                        <h5>Occasion:</h5>
+                                        Occasion:
                                     </label>
                                     <select name="occasion" id="occasion" class="form-textbox" required>
+                                        <option value="">Choose</option>
                                         <option value="birthday">Birthday</option>
                                         <option value="Baby">New Baby</option>
                                         <option value="communion">Communion</option>
@@ -252,9 +245,10 @@
                                 </div>
                                 <div class="col-12 dropdown-form text-center">
                                     <label for="cake-type">
-                                        <h5>Type of Cake:</h5>
+                                        Type of Cake:
                                     </label>
                                     <select name="cake-type" id="cake-type" class="form-textbox" required>
+                                        <option value="">Choose</option>
                                         <option value="vanilla">Vanilla Sponge Cake</option>
                                         <option value="chocolate">Chocolate Cake</option>
                                         <option value="cheesecake">Cheesecake</option>
@@ -266,7 +260,7 @@
                             <div class="row">
                                 <div class="col order-date text-center">
                                     <label for="required-date">
-                                        <h5>Cake required for: </h5>
+                                        Cake required for:
                                     </label>
                                     <input type="date" id="required-date" class="form-textbox" required>
                                 </div>
@@ -274,7 +268,7 @@
                             <div class="row">
                                 <div class="col text-center details">
                                     <label for="details">
-                                        <h5>Details</h5>
+                                        Details
                                     </label>
                                     <br>
                                     <textarea id="details" class="form-textbox" name="details" rows="5" cols="50"
@@ -296,15 +290,18 @@
         </section>
 
 
-        <footer>
+        <footer class="pb-sm-2 pb-md-3">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6" id="logo-footer">
-                        <img src="assets/images/Cake Only transparent.png" alt="icon of three tiered cake" height="35px"
-                            width="35px">
+                    <div class="col-6" id="logo-footer">
+                        <img src="assets/images/cake-only-transparent.png" alt="icon of three tiered cake" height="35"
+                            width="35">
                         <h4>SARAH'S BAKERY</h4>
+                        <p>sarahsbakery@gmail.com</p>
+                        <p>4 Rathmines Road, Dublin 6</p>
+                        <p>086 12345678</p>
                     </div>
-                    <div class="col-sm-6" id="social-links-footer">
+                    <div class="col-6" id="social-links-footer">
                         <ul class="list-inline social-links float-right">
                             <li class="list-inline-item float-left">
                                 <a target="_blank" href="https://instagram.com"><i
@@ -321,11 +318,11 @@
                                 <a target="_blank" href="https://pinterest.com"><i
                                         class="fab fa-pinterest-square"></i></a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
-
+                <p class="text-right copyright">Copyright Anne Marie Murphy 2021</p>
+            </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
