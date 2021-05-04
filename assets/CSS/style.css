@@ -126,11 +126,12 @@ nav li {
 
 /*------------------------------------------------------------Section Headings---------------*/
 
-.link-padding {
-    padding-top: 60px;
-}
 
 /*------------mobile-first------------*/
+
+.link-padding {
+    padding-top: 40px;
+}
 
 .section-heading {
     margin: 0 auto;
@@ -162,6 +163,10 @@ nav li {
 @media screen and (min-width: 450px) {
     .section-heading h2 {
         font-size: 35px;
+    }
+
+    .link-padding {
+        padding-top: 60px;
     }
 }
 
@@ -202,6 +207,7 @@ nav li {
     height: 300px;
     display: block;
     margin: auto;
+    padding-top: 10px;
 }
 
 .about-us-col {
