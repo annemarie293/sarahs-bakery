@@ -126,12 +126,15 @@ nav li {
 
 /*------------------------------------------------------------Section Headings---------------*/
 
+/* link-anchor trick from stack overflow https://stackoverflow.com/a/51071591 */
+
+section:target {
+    padding-top: 60px;
+    margin-top: -60px
+}
 
 /*------------mobile-first------------*/
 
-.link-padding {
-    padding-top: 40px;
-}
 
 .section-heading {
     margin: 0 auto;
@@ -163,10 +166,6 @@ nav li {
 @media screen and (min-width: 450px) {
     .section-heading h2 {
         font-size: 35px;
-    }
-
-    .link-padding {
-        padding-top: 60px;
     }
 }
 
