@@ -341,6 +341,16 @@
         </script>
         <script src="https://kit.fontawesome.com/e5d2a94111.js" crossorigin="anonymous"></script>
 
+        <!--JQuery script for active links on same page-->
+        <script>
+            $(document).ready(function () {
+                $("nav li").click(function () {
+                    $("nav li").removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+        </script>
+
     </body>
 
 
