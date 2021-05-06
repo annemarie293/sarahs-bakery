@@ -128,7 +128,9 @@ nav li {
 
 /* link-anchor trick from stack overflow https://stackoverflow.com/a/51071591 */
 
-section:target {
+#about-us:target,
+#cakes:target,
+#order:target {
     padding-top: 60px;
     margin-top: -60px
 }
@@ -160,6 +162,10 @@ section:target {
 
 #order .section-heading h2 {
     color: #eab953;
+}
+
+#markets .section-heading h2 {
+    color: #889b58;
 }
 
 /*-----------------Tablets----------------*/
@@ -444,6 +450,93 @@ section:target {
 
     .order-intro .col-lg-8 {
         right: 25px;
+    }
+}
+
+/*----------------------------------------------------------------------Markets-----------------------*/
+
+/*--------All/Mobile first--------*/
+#markets {
+    background-color: #eab953;
+}
+
+.market-text {
+    color: #fefefa;
+}
+
+.market-col {
+    padding: 0;
+}
+
+#markets .card {
+    background-color: #fefefa;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#markets .card-body h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#markets .card-body p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#markets .card-body {
+    color: #889b58;
+    font-size: large;
+    line-height: 1;
+}
+
+#markets .card-text {
+    padding: 10px;
+}
+
+#markets a {
+    color: #889b58;
+    text-decoration: none;
+}
+
+#markets a:hover {
+    color: #e7b734;
+}
+
+/*--------Tablets--------*/
+
+@media screen and (min-width: 450px) {
+    #markets {
+        padding-bottom: 10px;
+    }
+
+    .market-col {
+        margin-bottom: 15px;
+    }
+}
+
+/*--------large Screens--------*/
+
+@media screen and (min-width: 770px) {
+    #markets .card-body p {
+        font-size: 20px;
+    }
+
+    #markets {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    #markets .card-body h2 {
+        font-size: 35px;
+    }
+
+    #markets .card-body p {
+        font-size: 30px;
     }
 }
 
