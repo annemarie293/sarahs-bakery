@@ -61,7 +61,7 @@ nav li {
     background-image: url("../images/hero-image-home.jpg");
     /*photo credit: https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels*/
     background-size: cover;
-    height: 600px;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
