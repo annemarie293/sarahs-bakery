@@ -199,9 +199,9 @@ Testing was carried out by myself using Chrome DevTools while writing the code, 
 
     1. The anchor link brought the user to the correct section, but the section heading text was covered by the Navbar.
        - **_Fix:_** I did not want to add a huge padding-top to each section on the page to always be visible, so solution was found on stack-overflow to use padding and negative margin along with :target pseudo class so that the padding would only be applied when clicking on the link. Note, this was not applied to #markets section as this section height was too small for the section heading to be ata the top od the page, so fix was not necessary.
-       - **_Result:_** Section headings are clearly visibile beneath the navbar when clicked.
+       - **_Result:_** Section headings are clearly visible beneath the navbar when clicked.
 
-    2. The "Home" link was always highlighted in the active class as all links were targetted on the same page.
+    2. The "Home" link was always highlighted in the active class as all links were targeted on the same page.
        - **_Fix:_** A simple JQUERY script was found on stackoverflow which changed each link to the active class when it was clicked.
        - **_Result:_** Each link changes to the highlighted active class when clicked.
        
@@ -256,11 +256,11 @@ Testing was carried out by myself using Chrome DevTools while writing the code, 
 
   - **Bugs found during testing**
 
-    1. The card deck was not responsive on tablet sizes. Cards showed single stacked on miobile devices, but then showed as 4 cards in each row for both mobile and larger screens.
+    1. The card deck was not responsive on tablet sizes. Cards showed single stacked on mobile devices, but then showed as 4 cards in each row for both mobile and larger screens.
        - **_Fix:_** Bootstrap "card" class was added directly to each column. This seemed to prevent the responsive grid from working properly. The "card" class was removed from the columns, and instead added to a new div nested in each column.
        - **_Result:_** The card grid is now showing fully responsive on all screen sizes as intended.
 
-    2. When the card div was added to the column as in above fix, the cards were no longer the same height and were resposive to their content
+    2. When the card div was added to the column as in above fix, the cards were no longer the same height and were responsive to their content
        - **_Fix:_** The Bootstrap "h-100" class was added to each card to keep them all uniform height.
        - **_Result:_** Each card is now showing the same height, regardless of the amount of text contained inside.
 
@@ -285,9 +285,9 @@ Testing was carried out by myself using Chrome DevTools while writing the code, 
     Order Form Section
      1. Check that form displays full width on mobile devices.
         - **_Verified_**
-     2. Check that form is displayed in center screen with intended offset cols on tablet and large screens.
+     2. Check that form is displayed in the centre of the screen with intended offset cols on tablet and large screens.
         - **_Verified_** 
-     3. Check that all placeholder text is diplaying correctly and clearly visible.
+     3. Check that all placeholder text is displaying correctly and clearly visible.
         - **_Verified_** 
      4. Check that required fields must be completed before form can be submitted (first name, last name, phone, email, occasion, cake type and date)
         - **_Verified_**    
@@ -301,7 +301,7 @@ Testing was carried out by myself using Chrome DevTools while writing the code, 
 #### Markets Section
 
   - **Tests**
-     1. Check that section heading is visbile at top on all screensizes.
+     1. Check that section heading is visible at top on all screensizes.
         - **_Verified_**
      2. Check that on mobile screens, the market cards are displayed stacked full-width, 1*4 grid.
         - **_Verified_**
@@ -432,7 +432,7 @@ All code written by myself with the exception of:
      - [W3schools](https://www.w3schools.com/)
      - [Stackoverlfow](https://stackoverflow.com/)
      - [CSS-Tricks](https://css-tricks.com/)
-     - [Mozilla developper](https://developer.mozilla.org/en-US/) 
+     - [Mozilla developer](https://developer.mozilla.org/en-US/) 
      - Code Institute slack channel
 
    - Thanks also to my mentor Rahul Lakhanpal for all his help and support throughout this project. 
