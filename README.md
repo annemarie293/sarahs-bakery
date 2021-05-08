@@ -64,8 +64,9 @@ ___
 
  - Single scrolling page to allow for a single loading time when opening the page, and geared towards improved mobile user experience (no need to switch pages or tabs)
  - Full width header containing navbar links to all sections of the page. This is fixed to the top of the page so it is always possible to navigate to another section from any position on the page.
- - Responsive navbar which collapses to hamburger icon with dropdown menu for smaller screen sizes
+ - Responsive and interactive navbar which collapses to hamburger menu with dropdown menu for smaller screen sizes
  - Large full width, viewport height hero image of Sarah’s cakes to introduce the user to her products.
+ - Bio section with a picture of Sarah and information to introduce her and her business to customers.
  - Listing of all the available cakes in a responsive grid format for all screen sizes
  - Order form which can be submitted to request a custom cake order
  - Listing of all market locations in a responsive grid format for all screen sizes, and links to google map locations of each market.
@@ -122,7 +123,7 @@ ___
 
 ## **Testing**
 
-#### VALIDATION
+### VALIDATION
 
 W3C Markup Validator and W3C CSS Validator tools were used to check all code written for this project and validate that there were no syntax errors
 
@@ -133,7 +134,8 @@ W3C Markup Validator and W3C CSS Validator tools were used to check all code wri
 
  ### USER STORIES
 
- - New Customer
+ - **New Customer**
+
      1. As a new customer, I want to easily find about Sarah and her bakery
 
          1. On the first visit to the site, users are greeted by a large clear banner containing the logo and name of the bakery and the navigation bar at the top of the page (or dropdown menu log on mobile/tablets). A large hero image fills the viewport, showing the cakes made by Sarah and inviting the user to discover more.
@@ -145,7 +147,7 @@ W3C Markup Validator and W3C CSS Validator tools were used to check all code wri
      2. As a new customer, I want to see what cakes Sarah has for Sale
           1. On visiting the site, the user can immediately jump to the “cakes” section from the navbar, or scroll down the page until they reach the cakes section.
           2. The cakes menu is displayed in a grid format, with a separate card for each cake containing a picture, cake name and description for each.
-          3. The grid is displayed single stacked for mobile users (8x1 cards), 2 card width for tablets (4*2 cards) and 4 cards wide for laptops and larger screens (2*4 cards)
+          3. The grid is displayed single stacked for mobile users (8*1 cards), 2 card width for tablets (4*2 cards) and 4 cards wide for laptops and larger screens (2*4 cards)
           4. On laptop/computer devices, each card changes to green to highlight the content while the mouse pointer hovers over it. The same effect is achieved on mobile/tablet screens by tapping the card.
 
      3. As a new customer, I want to find out where I can buy Sarah's cakes
@@ -156,7 +158,8 @@ W3C Markup Validator and W3C CSS Validator tools were used to check all code wri
          5. For mobile/tablet users without hover capability, the map location icon helps to show that this is a link, and clicking on it will open the google maps app to show the market location.
 
 
- - Existing customer
+ - **Existing customer**
+
      1. As an existing customer, I want to keep checking on the latest weekly menu
          1. On visiting the site, the user can immediately jump to the “cakes” section from the navbar, or scroll down the page until they reach the cakes section.
          2. The cakes menu is displayed in a grid format, with a separate card for each cake containing a picture, cake name and description for each.
@@ -170,6 +173,178 @@ W3C Markup Validator and W3C CSS Validator tools were used to check all code wri
          3. The user can complete the form with contact details and details on the occasion and type of cake required.
          4. The user will not be able to submit the form until all fields (except for additional information textbox) are completed.
 
+
+### MANUAL TESTING OF ALL ELEMENTS
+
+Testing was carried out by myself using Chrome DevTools while writing the code, and once deployed, friends and family helped to test the site on various screen sizes and web browsers.
+
+#### Navbar
+
+  - **Tests**
+
+    1. Check that logo and "Sarahs Bakery" text are visible on all screen sizes, and resized accordingly.
+       - **_Verified_**
+    2. Check that navbar links are collapsed to hamburger menu for tablet and mobile screens.
+       - **_Verified_**
+    3. Check that dropdown menu of links is shown when hamburger menu is clicked on mobile and tablet.
+       - **_Verified_**
+    4. Check that the links change colour when hovered on all screen sizes.
+       - **_Verified_**
+    5. Click on each link to ensure the link goes to the correct section of the page.
+       - **_Verified_**
+    6. Check that navbar is fixed to the top of the screen on all screen sizes and devices.
+       - **_Verified_**
+
+  - **Bugs found during testing**
+
+    1. The anchor link brought the user to the correct section, but the section heading text was covered by the Navbar.
+       - **_Fix:_** I did not want to add a huge padding-top to each section on the page to always be visible, so solution was found on stack-overflow to use padding and negative margin along with :target pseudo class so that the padding would only be applied when clicking on the link. Note, this was not applied to #markets section as this section height was too small for the section heading to be ata the top od the page, so fix was not necessary.
+       - **_Result:_** Section headings are clearly visibile beneath the navbar when clicked.
+
+    2. The "Home" link was always highlighted in the active class as all links were targetted on the same page.
+       - **_Fix:_** A simple JQUERY script was found on stackoverflow which changed each link to the active class when it was clicked.
+       - **_Result:_** Each link changes to the highlighted active class when clicked.
+       
+
+#### Hero Image Section
+
+  - **Tests**
+     1. Hero Image is visible on all screen sizes, and covers the full width and height.
+        - **_Verified_**
+     2. Hero Image text section is visible on all screen sizes, located to the top left.
+        - **_Verified_**
+
+  - **Bugs found during testing**
+     1. Friends and family testing the site following deployment noticed that the image was not the full height on all devices.
+       - **_Fix:_** CSS img sizing was updated to 100 vh.
+       - **_Result:_** Hero image displays full height on first visit to the page across all devices.   
+
+
+#### About Section
+
+  - **Tests**
+     1. Check that section heading is visible at the top on all screensizes.
+        - **_Verified_**
+     2. On mobile and tablets, check that the bootstrap grid cols are stacked full width.
+        - **_Verified_** 
+     3. On mobile and tablets, check that the image is displayed above the text.
+        - **_Verified_**  
+     4. On large screens, check that the bootstrap grid cols are displayed side by side (text 2/3 width, img 1/3 width)
+        - **_Verified_**
+     5. On large screens, check that img is displayed to the right of the text.
+        - **_Verified_** 
+
+  - **Bugs found during testing**
+    - No issues found.
+
+
+#### Cakes Menu Section
+
+  - **Tests**
+     1. Check that section heading is visible at the top on all screensizes.
+        - **_Verified_**
+     2. Check that on mobile screens, the cake menu cards are displayed stacked full-width, 1*8 grid.
+        - **_Verified_**
+     3. Check that on tablets, the cake menu cards are displayed side by side, half width each, 2*4 grid.
+        - **_Verified_** 
+     4. Check that on large screens, the cake menu cards are displayed 4 across, 1/4 width each, 4*2 grid.
+        - **_Verified_** 
+     5. Check that on computer screens, the highlight effect is working, card changes to green with white text on hover.
+        - **_Verified_**
+     6. Check that on mobile and tablet screens, the highlight effect is working, card changes to green with white text on tap.
+        - **_Verified_**  
+
+  - **Bugs found during testing**
+
+    1. The card deck was not responsive on tablet sizes. Cards showed single stacked on miobile devices, but then showed as 4 cards in each row for both mobile and larger screens.
+       - **_Fix:_** Bootstrap "card" class was added directly to each column. This seemed to prevent the responsive grid from working properly. The "card" class was removed from the columns, and instead added to a new div nested in each column.
+       - **_Result:_** The card grid is now showing fully responsive on all screen sizes as intended.
+
+    2. When the card div was added to the column as in above fix, the cards were no longer the same height and were resposive to their content
+       - **_Fix:_** The Bootstrap "h-100" class was added to each card to keep them all uniform height.
+       - **_Result:_** Each card is now showing the same height, regardless of the amount of text contained inside.
+
+
+#### Order Section
+
+  - **Tests**
+
+    Order Intro Section
+
+     1. Check that section heading is visible at the top on all screensizes.
+        - **_Verified_**
+     2. On mobile and tablets, check that the bootstrap grid cols are stacked full width.
+        - **_Verified_** 
+     3. On mobile and tablets, check that the image is displayed above the text.
+        - **_Verified_**  
+     4. On large screens, check that the bootstrap grid cols are displayed side by side (text 2/3 width, img 1/3 width)
+        - **_Verified_**
+     5. On large screens, check that img is displayed to the left of the text.
+        - **_Verified_** 
+
+    Order Form Section
+     1. Check that form displays full width on mobile devices.
+        - **_Verified_**
+     2. Check that form is displayed in center screen with intended offset cols on tablet and large screens.
+        - **_Verified_** 
+     3. Check that all placeholder text is diplaying correctly and clearly visible.
+        - **_Verified_** 
+     4. Check that required fields must be completed before form can be submitted (first name, last name, phone, email, occasion, cake type and date)
+        - **_Verified_**    
+     5. Check that all fields are mapped to the correct name when form is submitted.
+        - **_Verified_** (Code institute formdump action used for this, results [here](/assets/images/readme-images/formdump-test.jfif). Form action has been removed for the final deploy as there is no current target for this info)
+
+  - **Bugs found during testing**
+     - No issues found
+
+
+#### Markets Section
+
+  - **Tests**
+     1. Check that section heading is visbile at top on all screensizes.
+        - **_Verified_**
+     2. Check that on mobile screens, the market cards are displayed stacked full-width, 1*4 grid.
+        - **_Verified_**
+     3. Check that on tablets, the market cards are displayed side by side, half width each, 2*2 grid.
+        - **_Verified_** 
+     4. Check that on large screens, the market cards are displayed 4 across, 1/4 width each, 4*1 grid.
+        - **_Verified_** 
+     5. Check that the hover effect is working for the market location link - text changes to orange.
+        - **_Verified_** 
+     6. Check that the link for each market opens to a new tab on computer screens.
+        - **_Verified_** 
+     7. Check that the link for each market opens to the google maps app for mobiles and tablets.
+        - **_Verified_** 
+     8. Check that the link for each market opens to the relevant location in google maps.
+        - **_Verified_** 
+
+
+  - **Bugs found during testing**
+     - No issues found
+
+
+#### Footer
+
+  - **Tests**
+    1. Check that footer is visible at the bottom of the page.
+        - **_Verified_** 
+    2. Check that the logo and "Sarahs Bakery" text is visible on the left hand side and has responsive sizing on all screen sizes.
+        - **_Verified_** 
+    3. Check that the contact information below the logo section is clearly visible on all screen sizes.
+        - **_Verified_** 
+    4. Check that the social media icon links are visible on all screen sizes, and positioned to the right of the footer.
+        - **_Verified_** 
+    5. Check that the hover class is working on computer screens - icon should change to orange.
+        - **_Verified_** 
+    6. Check that the social media links open in a new tab.
+        - **_Verified_** 
+    7. Check that the social media links open to the correct site.
+        - **_Verified_** 
+
+  - **Bugs found during testing**
+        - No issues found.
+
+ 
 ___
 
 ## **Deployment**
@@ -223,6 +398,14 @@ ___
 ___
 
 ## **Credits**
+
+#### CODE
+
+All code written by myself with the exception of:
+ - [JQUERY script to change the current section link to active when the link target is on the same page](https://stackoverflow.com/a/23921579)
+ - [CSS code so that padding is applied to top of sections when the link is clicked, allowing the section heading to be visible below the header](https://stackoverflow.com/a/51071591)
+ - Bootstrap used for the collapsible navbar element, grid layout, card structure and form elements.
+
 
 #### CONTENT
   - The text content for this site was all written by myself, Anne Marie Murphy.

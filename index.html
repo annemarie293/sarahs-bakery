@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/CSS/style.css">
         <title>Sarah's Bakery</title>
     </head>
@@ -65,6 +66,7 @@
                 <div class="col-lg-4 order-lg-12 about-us-pic">
                     <img class="img-fluid" src="assets/images/sarahbiopic.jpeg"
                         alt="picture of Sarah decorating some cakes">
+                    <!--Image credit in readme file-->
                 </div>
                 <div class="col-lg-8 order-lg-1 about-us-col">
                     <div class="about-us-text">
@@ -90,6 +92,7 @@
                 <div class="row no-gutters card-deck">
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="card text-center h-100 shadow">
+                            <!--All image credits in readme file-->
                             <img class="card-img-top img-fluid cakes-menu-img" src="assets/images/cheesecake.jpg"
                                 alt="image of cheesecake">
                             <div class="card-body">
@@ -204,6 +207,7 @@
                 <div class="col-lg-4 no-gutters order-first order-pic">
                     <img class="img-fluid" src="assets/images/cake-collage.jpg"
                         alt="collage of 4 different occasion cakes">
+                    <!--All image credits in readme file-->
                 </div>
             </div>
 
@@ -245,7 +249,7 @@
                                     <select name="occasion" id="occasion" class="form-textbox  form-control" required>
                                         <option value="">Choose</option>
                                         <option value="birthday">Birthday</option>
-                                        <option value="Baby">New Baby</option>
+                                        <option value="baby">New Baby</option>
                                         <option value="communion">Communion</option>
                                         <option value="confirmation">Confirmation</option>
                                         <option value="wedding">Wedding</option>
@@ -406,7 +410,7 @@
         </script>
         <script src="https://kit.fontawesome.com/e5d2a94111.js" crossorigin="anonymous"></script>
 
-        <!--JQuery script for active links on same page-->
+        <!--JQuery script for active links on same page https://stackoverflow.com/a/23921579 -->
         <script>
             $(document).ready(function () {
                 $("nav li").click(function () {
