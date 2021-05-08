@@ -5,7 +5,7 @@ View the deployed site [here](https://annemarie293.github.io/sarahs-bakery/ "Sar
 ## Project Introduction
 Sarah recently lost her job due to the Covid-19 lockdown and has decided to take this as an opportunity to pursue her passion for baking into a career. She has been selling her baked goods at some local markets and created social media accounts to connect with her customers. She feels a website is now necessary to help grow her business, creating a branded image and attracting new customers. The website would provide a full list of all her available cakes and pastries, as well as information on which markets she will be selling at. She would use the website as a way to take custom orders and increase her sales.7
 
-![image of site mock-ups on various screen sizes](https://github.com/annemarie293/sarahs-bakery/blob/3eba9aac62830f705c58d3d37bbb403a0611bf2f/assets/images/readme-images/screens-mockup.jpeg "Mock Up")
+![image of site mock-ups on various screen sizes](/assets/images/readme-images/screens-mockup.jpeg "Mock Up")
 ___
 
 ## **User Experience (UX)**
